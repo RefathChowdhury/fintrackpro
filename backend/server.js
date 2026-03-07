@@ -10,7 +10,7 @@ const Database = require("better-sqlite3");
 const { PlaidApi, PlaidEnvironments, Configuration } = require("plaid");
 
 const app = express();
-app.use(cors({ origin: process.env.FRONTEND_URL || "http://localhost:3000" }));
+app.use(cors({ origin: true }));
 app.use(express.json());
 
 // ─── DATABASE SETUP ──────────────────────────────────────────────────────────
